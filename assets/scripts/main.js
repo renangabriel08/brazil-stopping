@@ -6,37 +6,37 @@
             0:{
                 cidadeAcomodacao: "Rio de Janeiro",
                 valorAcomodacao: "100,00",
-                fotoAcomodacao: "../assets/imgs/hotel1.jpeg",
+                fotoAcomodacao: "./assets/imgs/hotel1.jpeg",
                 ratingAcomodacao: "5"
             },
             1:{
                 cidadeAcomodacao: "Rio de Janeiro",
                 valorAcomodacao: "230,00",
-                fotoAcomodacao: "../assets/imgs/hotel2.jpeg",
+                fotoAcomodacao: "./assets/imgs/hotel2.jpeg",
                 ratingAcomodacao: "4"
             },
             2:{
                 cidadeAcomodacao: "Rio de Janeiro",
                 valorAcomodacao: "150,00",
-                fotoAcomodacao: "../assets/imgs/hotel3.jpeg",
+                fotoAcomodacao: "./assets/imgs/hotel3.jpeg",
                 ratingAcomodacao: "4"
             },
             3:{
                 cidadeAcomodacao: "Rio de Janeiro",
                 valorAcomodacao: "580,00",
-                fotoAcomodacao: "../assets/imgs/hotel4.jpeg",
+                fotoAcomodacao: "./assets/imgs/hotel4.jpeg",
                 ratingAcomodacao: "5"
             },
             4:{
                 cidadeAcomodacao: "Rio de Janeiro",
                 valorAcomodacao: "235,00",
-                fotoAcomodacao: "../assets/imgs/hotel5.jpg",
+                fotoAcomodacao: "./assets/imgs/hotel5.jpg",
                 ratingAcomodacao: "4"
             },
             5:{
                 cidadeAcomodacao: "Rio de Janeiro",
                 valorAcomodacao: "760,00",
-                fotoAcomodacao: "../assets/imgs/hotel6.png",
+                fotoAcomodacao: "./assets/imgs/hotel6.png",
                 ratingAcomodacao: "5"
             }
         };
