@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Agência de Viagens</title>
+	<link rel="stylesheet" href="assets/styles/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/styles/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/viewslider.css">
+	<link rel="stylesheet" href="assets/styles/autocomplete.css">
+</head>
+<body>
+
+	<header class="cabecalho">
+		<a href="./index.html"><img src="./assets/imgs/logo-footer.png" alt="" height="70px" style="margin: 10px 0;"></a>
+
+		<div class="menu">
+			<div id="menuHeader" class="d-flex justify-content-between">
+				<div class="menu pull-right row align-items-center">
+					<div class="col" style="color: #fff; transform: translateX(15px);">MENU</div>
+					<div class="col position-relative">
+						<img src="assets/imgs/Menu.png" alt="Menu de Opções" class="menuOpen" style="height: 30px;">
+						<img src="assets/imgs/cancela.png" height="37" class="menuCancel">
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div id="innerHeader">
+		<div class="full-container sectionHead position-relative">
+			<div class="container h-100">
+		
+				<div id="consultaPacotes" class="d-flex justify-content-center align-items-end">
+					<form class="formPesquisa row no-gutters" method="GET" action="comprar.html" style="z-index: 10;">
+						<div class="origem col mr-2">
+							<span><i><label for="origem">informar *</label></i></span>
+							<div>
+								<span><img src="assets/imgs/icon-localization.png" alt="" style="margin-left: -20px;"></span>
+								<span> <input id="origem" type="text" name="origem" required  placeholder="Origem"></span>
+							</div>
+						</div>
+						<div class="destino col mr-2 position-relative">
+							<span><i><label for="destino">visualizar *</label></i></span>
+							<div>
+								<span class="autocomplete"> <input type="text" name="destino" required  id="destino" placeholder="Cidade Destino"></span>
+							</div>
+						</div>
+						<div class="datas col mr-2" data-target="#dataIda" data-toggle="datetimepicker">
+							<span><i><label for="dataIda">selecionar ida *</label></i></span>
+							<div>
+								<span> <input type="text" id="dataIda" name="dataIda" required  data-target="#dataIda" class="datetimepicker-input"
+										placeholder="Data de Ida" autocomplete="off"></span>
+							</div>
+						</div>
+						<div class="datas col mr-2 " data-target="#dataRetorno" data-toggle="datetimepicker">
+							<span><i><label for="dataRetorno">selecionar volta</label></i></span>
+							<div>
+								<span> <input type="text" id="dataRetorno" required  name="dataRetorno" data-target="#dataRetorno"
+										class="datetimepicker-input" placeholder="Data de Retorno" autocomplete="off"></span>
+							</div>
+						</div>
+						<button type="submit" class="submitReserva">Buscar</button>
+					</form>
+				</div>
+		
+			</div>
+			<img src="assets/imgs/mask-background.png" alt="" class="img-fluid" style="position:absolute; bottom:0; z-index: 1;">
+		</div>
+	</div>
+
+	<!-- Segunda seção do site. -->
+	<section>
+		<div class="full-container" id="acomodacoes">
+			<div class="container">
+				<div class="containerHead d-flex justify-content-between">
+					<div class="titleSection">
+						Acomodações
+						<div class="subtitleSection">nas redondezas das melhores praias</div>
+					</div>
+					<div class="filtroLabel">
+						Filtrar Resultados <span><img src="assets/imgs/icon-filter.png" alt=""></span>
+					</div>					
+				</div>
+			</div>
+
+			<div id="acomodacoesSection" class="row no-gutters" style="padding: 0 5%;">
+				<!-- recebe as acomodações via javascript -->
+			</div>
+		</div>
+	</section>
+
+
+	<section class="videos">
+		<div class="full-container mt-5" style="background: url(assets/imgs/bg-video.png) center center no-repeat; background-size:100%; ">
+			<div class="container section">
+				<div class="containerHead d-flex justify-content-between" >
+					<div class="titleSection">Experiências<div class="subtitleSection">foram e compartilharam</div></div>
+					<div class="titleBlue">Cabo Frio, Rio de Janeiro</div>
+				</div>
+				<div class="slideShow position-relative d-flex justify-content-center mt-5" >
+					<div class="mySlides"><iframe style="width:100%; height: 100%" src="https://www.youtube.com/embed/CZ5oucid3qQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+					<div class="mySlides"><iframe style="width:100%; height: 100%" src="https://www.youtube.com/embed/4jMZjjLHMZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+					<div class="_Voltar" onclick="plusDivs(-1)">&#10094;</div>
+					<div class="_Avancar" onclick="plusDivs(+1)">&#10095;</div>
+				</div>
+			</div>
+		</div>
+	</section>
+		
+		<footer>
+			<div class="top">
+				<div class="explore">
+					<h2>Explore</h2>
+					<p>Home</p>
+					<p>Trips</p>
+					<p>Flights</p>
+				</div>
+				<div class="about">
+					<h2>About Us</h2>
+					<p>About the Company</p>
+					<p>Contact</p>
+					<p>Blog</p>
+				</div>
+				<div class="support">
+					<h2>Support</h2>
+					<p>FAQ</p>
+					<p>Phone</p>
+					<p>Chat</p>
+				</div>
+				<div class="information">
+					<h2>Information</h2>
+					<p>Since 2010, BrazilStopping has been providing its customers with unique and authentic experiences on trips throughout Brazil. With a team passionate about tourism and a commitment to offering high-quality services.</p>
+				</div>
+			</div>
+			<div class="baixo">
+				<img src="./assets/imgs/logo-footer.png" alt="">
+				<div class="redes">
+					<img src="./assets/imgs/Facebook.png" alt="">
+					<img src="./assets/imgs/WhatsApp.png" alt="">
+					<img src="./assets/imgs/Instagram.png" alt="">
+				</div>
+			</div>
+		</footer>
+		
+		
+		<div class="menuVertical">
+			<ul class="menu-list">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#acomodacoes">Acomodações</a></li>
+				<li><a href="#consultaPacotes">Reservar</a></li>
+				<li><a href="mailto:equipesomar@somar.com.br">Fale Conosco</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+	<script src="assets/scripts/lib/bootstrap.min.js"></script>
+	<script src="assets/scripts/lib/moment.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="assets/scripts/lib/viewslider.js"></script>
+	<script src="assets/scripts/destinos.js"></script>
+
+	<script src="assets/scripts/main.js"></script>
+</body>
+</html>
